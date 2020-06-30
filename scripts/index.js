@@ -17,7 +17,7 @@ async function load_func() {
     )[0].innerHTML = `<div id="loader"></div>`;
 
     let response = await fetch(
-      `http://www.omdbapi.com/?apikey=ed7bb566&s=${search_text}`
+      `https://www.omdbapi.com/?apikey=ed7bb566&s=${search_text}`
     );
 
     let data = await response.json();
